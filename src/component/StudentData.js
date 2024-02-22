@@ -34,7 +34,7 @@ function StudentData() {
                     {data.map((d) => (
                         <div key={d.name} className="bg-white h-[350px] text-black rounded-xl">
                             <div className='h-10 bg-[#B85042] flex justify-center items-center rounded-t-xl'>
-                                <img src={d.img1} alt="" className="h-44 w-44 rounded-full" />
+                               <img src={d.img1} alt="" className="h-44 w-44 rounded-full" />
                             </div>
 
                             <div className="flex flex-col items-center justify-center gap-4 p-4">
