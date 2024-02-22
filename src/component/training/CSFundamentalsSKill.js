@@ -23,7 +23,7 @@ function CSFundamentalsSKill() {
                 {csfnData.map((item, index) => (
                     <div
                         key={item.id}
-                        className={`relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full h-72 max-w-[80rem] flex-row mx-32 mt-20 ${index % 2 === 0 ? "flex-row-reverse" : "" // Adjusts image position based on index
+                        className={`relative flex bg-clip-border duration-700 hover:scale-110 hover:shadow-xl rounded-xl bg-white text-gray-700 shadow-md w-full h-72 max-w-[80rem] flex-row mx-32 mt-20 ${index % 2 === 0 ? "flex-row-reverse" : "" // Adjusts image position based on index
                             }`}
                     >
                         <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white  bg-clip-border rounded-xl shrink-0">

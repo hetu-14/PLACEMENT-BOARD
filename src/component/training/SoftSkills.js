@@ -14,7 +14,7 @@ function SoftSkills() {
             <div className="skfn w-auto mx-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-14 gap-x-14 mt-10 mb-5">
                 {skfnData.map((item, index) => (
                     <div
-                        className="max-w-[26rem] mt-5 mb-10 rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg"
+                        className="max-w-[26rem] mt-5 mb-10 rounded-xl bg-white bg-clip-border text-gray-700 duration-700 hover:scale-110 hover:shadow-xl shadow-lg"
                         key={index}
                     >
                         <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
