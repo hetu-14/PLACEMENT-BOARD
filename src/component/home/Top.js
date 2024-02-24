@@ -29,7 +29,7 @@ const Top = () => {
             <div >
                 <div >
 
-                    <Card sx={{ minWidth: 150 }} color="text.secondary" className="bg-blue-200 grid grid-cols-2 gap-4"  >
+                    <Card sx={{ minWidth: 150 }} color="text.secondary" className=" grid grid-cols-2 gap-4"  >
                         <CardContent>
                             <Typography sx={{ fontSize: 40 }} color="text.secondary" gutterBottom>
                                 30 Lacs
@@ -74,19 +74,6 @@ const Top = () => {
                                 Recruiting Companies
                             </Typography>
                         </CardContent>
-                        <List sx={style} aria-label="mailbox folders">
-                            <ListItem>
-                                <ListItemText primary="Carreer Development And Training" />
-                            </ListItem>
-                            <Divider component="li" />
-                            <ListItem>
-                                <ListItemText primary="Industry Collaboration For Upskilling" />
-                            </ListItem>
-                            <Divider component="li" />
-                            <ListItem>
-                                <ListItemText primary="Campus Drive And Interview Training" />
-                            </ListItem>
-                        </List>
                     </Card>
 
                     {/* list questions */}

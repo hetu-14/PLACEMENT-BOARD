@@ -5,7 +5,7 @@ function SoftSkills() {
     return (
         <div>
             <h2 className="font-bold text-2xl mb-4 underline underline-offset-2 mt-16">
-                skilss
+                Skills
             </h2>
             <p className="font-normal mx-20 text-center ">
                 Deepen your understanding of CS fundamentals – the bedrock of
