@@ -7,6 +7,7 @@ import Footer from './home/Footer';
 import Company from './home/Company';
 import Stats from './home/Stats';
 import Top from './home/Top';
+import St2 from './home/Stat2';
 
 const Home = ({ user }) => {
   return (
@@ -15,6 +16,7 @@ const Home = ({ user }) => {
      <Company/>
       <StudentData />
       <Stats/>
+      <St2/>
       <Footer/>
     </>
   );

@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Card,
     CardBody,
@@ -13,12 +12,12 @@ import {
   // const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
    
   const chartConfig = {
-    type: "bar",
+    type: "line",
     height: 240,
     series: [
       {
-        name: "highest packege",
-        data: [12, 10, 12, 14, 13.5],
+        name: "Students placed",
+        data: [112, 70, 155, 124, 180],
       },
     ],
     options: {
@@ -34,11 +33,12 @@ import {
         enabled: false,
       },
       colors: ["#020617"],
-      plotOptions: {
-        bar: {
-          columnWidth: "40%",
-          borderRadius: 2,
-        },
+      stroke: {
+        lineCap: "round",
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
       },
       xaxis: {
         axisTicks: {
@@ -56,12 +56,12 @@ import {
           },
         },
         categories: [
-          "2019",
-          "2020",
-          "2021",
-          "2022",
-          "2023",
-          
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+         
         ],
       },
       yaxis: {
@@ -73,9 +73,9 @@ import {
             fontWeight: 400,
           },
         },
-        tickAmount: 5, // Specify the number of ticks on the y-axis
-      min: 0, // Set the minimum value of the y-axis
-      max: 15,
+        tickAmount: 6, // Specify the number of ticks on the y-axis
+        min: 0, // Set the minimum value of the y-axis
+        max: 240,
       },
       grid: {
         show: true,
@@ -100,9 +100,9 @@ import {
     },
   };
    
-  const Stats = () =>{
+  export default function Example() {
     return (
-      <Card className="w-4/5 text-center mx-auto mt-10">
+      <Card  className="w-4/5 mx-auto my-10">
         <CardHeader
           floated={false}
           shadow={false}
@@ -111,8 +111,8 @@ import {
         >
           
           <div>
-            <Typography variant="h6" color="blue-gray" align="center">
-              Past Year Highest pack
+            <Typography variant="h6" color="blue-gray">
+              Students placed in past years
             </Typography>
             
           </div>
@@ -123,18 +123,3 @@ import {
       </Card>
     );
   }
-// const Stats = () => {
-//     return (
-//         <div>
-//             <h1 className='text-gray-600 text-6xl bold underline bg-slate-400 mt-8'>Have A Seek On Past Year Placement Graphs</h1>
-//             <div class="grid grid-cols-3 gap-4 mt-5">
-//                 <img src="/images/BarGraph.jpg" alt="bargraph" class="h-80 w-80 object-cover ml-20 " />
-//                 <img src="/images/PieChart.jpg" alt="piechart" class="h-80 w-80 object-cover mx-10" />
-//                 <img src="/images/BarGraph.jpg" alt="bargraph" class="h-80 w-80 object-cover ml-20 " />
-//             </div>
-
-//         </div>
-//     )
-// }
-
-export default Stats
