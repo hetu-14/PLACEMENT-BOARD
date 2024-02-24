@@ -1,46 +1,67 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Divider, List, ListItem, ListItemText } from '@mui/material';
 import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 
 export default function Company() {
-  const cards = [
+  const data = [
     { image: "/images/facebook.svg", title: 'Facebook', text: 'Facebook...', },
     { image: "/images/google.svg", title: 'Google', text: 'Google....', },
-    { image: "/images/youtube.svg", title: 'Youtube', text: 'Google....' },
-    { image: "/images/snapchat.svg", title: 'SnapChat', text: 'Google....' },
+    { image: "/images/youtube.svg", title: 'Youtube', text: 'Youtube....' },
+    { image: "/images/snapchat.svg", title: 'SnapChat', text: 'SnapChat....' },
 
   ];
-  return (
-    <div>
-      <h1 className='text-gray-600 text-6xl bold underline bg-slate-400' >Know About The Best Companies Visited Here!</h1>
-      <Grid container spacing={6} mt={2}>
-        {cards.map((card) => (
-          <Grid item xs={6} md={4} lg={3} key={card.title}>
-            <Card sx={{ maxWidth: 330 }}>
-              <CardMedia
-                sx={{ height: 140 }}
-                image={card.image}
-                title={card.title}
-              />
-              <CardContent className=''>
-                <Typography gutterBottom variant="h5" component="div">
-                  {card.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {card.text}
-                </Typography>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
+  const style = {
+    py: 0,
+    width: '100%',
+    maxWidth: 360,
+    borderRadius: 2,
+    border: '1px solid',
+    borderColor: 'divider',
+    backgroundColor: 'background.paper',
+  };
 
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">
-                  Learn More
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+  return (
+    <div className='w-2/4 m-auto'>
+      <div>
+        <List sx={style} aria-label="mailbox folders">
+          <ListItem>
+            <ListItemText primary="Carreer Development And Training" />
+          </ListItem>
+          <Divider component="li" />
+          <ListItem>
+            <ListItemText primary="Industry Collaboration For Upskilling" />
+          </ListItem>
+          <Divider component="li" />
+          <ListItem>
+            <ListItemText primary="Campus Drive And Interview Training" />
+          </ListItem>
+        </List>
+      </div>
+      <div className="mt-20">
+        <Slider {...settings}>
+          {data.map((d) => (
+            <div key={d.name} className="bg-[#e7e8d1] h-[350px] text-black rounded-xl">
+              <div className='h-200 bg-[#f7f8f3] flex justify-center items-center rounded-t-xl'>
+                <img src={d.image} alt="" className="h-46 w-46 rounded-full" />
+              </div>
+              <div className="flex flex-col items-center justify-center gap-4 p-4">
+                <p className="text-x font-semibold">{d.title}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
     </div>
 
   );

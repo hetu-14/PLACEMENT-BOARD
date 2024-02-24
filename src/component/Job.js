@@ -5,7 +5,7 @@ function Job(props) {
     } = props
     // console
     // console.log(description1)
-    let dd = description1.slice(0,500)
+    let dd = description1.slice(0,200)
     return (
         <div className="mx-4">
             {/* Hello */}

@@ -2,7 +2,7 @@
 import React from 'react';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import StudentData from './StudentData';
+import StudentData from './home/StudentData';
 import Footer from './home/Footer';
 import Company from './home/Company';
 import Stats from './home/Stats';
@@ -12,7 +12,7 @@ const Home = ({ user }) => {
   return (
     <>
        <Top/>
-     <Company/>
+       <Company/>
       <StudentData />
       <Stats/>
       <Footer/>
