@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Navbar({ user, setLoginUser }) {
   const navigate = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-[#A7BEAE]">
+    <Disclosure as="nav" className="bg-[#d6ccc2]">
       {({ open }) => (
         <>
           <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">

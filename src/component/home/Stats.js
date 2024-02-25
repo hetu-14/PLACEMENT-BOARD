@@ -102,17 +102,22 @@ import {
    
   const Stats = () =>{
     return (
+      <div>
+      <br></br>
+      <div className='my-10'>
+      <h1 className='text-5xl italic font-medium  text-black-600'>Past Year Placement Insights:</h1><h2 className='text-5xl italic font-normal text-black-600'> A Visual Overview of Our Alumni's Career Achievements
+</h2></div>
       <Card className="w-4/5 text-center mx-auto mt-10">
         <CardHeader
           floated={false}
           shadow={false}
           color="transparent"
-          className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
+          className="flex flex-col gap-4"
         >
           
           <div>
-            <Typography variant="h6" color="blue-gray" align="center">
-              Past Year Highest pack
+            <Typography variant="h4" color="blue-gray" align="center">
+              <b>Past Year Highest pack</b>
             </Typography>
             
           </div>
@@ -121,6 +126,7 @@ import {
           <Chart {...chartConfig} />
         </CardBody>
       </Card>
+      </div>
     );
   }
 // const Stats = () => {

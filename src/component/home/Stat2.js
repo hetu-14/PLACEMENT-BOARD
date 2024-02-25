@@ -107,13 +107,13 @@ import {
           floated={false}
           shadow={false}
           color="transparent"
-          className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
+          className="flex flex-col gap-4 "
         >
           
           <div>
-            <Typography variant="h6" color="blue-gray">
-              Students placed in past years
-            </Typography>
+            <Typography variant="h4" color="blue-gray">
+            <b> Total Students placed in past years
+            </b></Typography>
             
           </div>
         </CardHeader>

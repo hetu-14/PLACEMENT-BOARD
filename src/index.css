@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    background-color: #e7e8d1;
+    background-color: #edede9;
   }
 
   ::selection {
@@ -20,3 +20,4 @@
 .slick-dots li.slick-active button:before {
   color: orange !important;
 }
+/* styles.css */

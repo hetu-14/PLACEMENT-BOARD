@@ -31,27 +31,15 @@ export default function Company() {
   };
 
   return (
-    <div className='w-2/4 m-auto'>
-      <div>
-        <List sx={style} aria-label="mailbox folders">
-          <ListItem>
-            <ListItemText primary="Carreer Development And Training" />
-          </ListItem>
-          <Divider component="li" />
-          <ListItem>
-            <ListItemText primary="Industry Collaboration For Upskilling" />
-          </ListItem>
-          <Divider component="li" />
-          <ListItem>
-            <ListItemText primary="Campus Drive And Interview Training" />
-          </ListItem>
-        </List>
-      </div>
+    
+    <div className='w-4/5 m-auto  '>
+    
       <div className="mt-20">
+      <h1 className='text-5xl italic font-medium my-10 text-black-600'>Premier Employers on Campus <br></br>Where Top Talent Meets Leading Companies</h1>
         <Slider {...settings}>
           {data.map((d) => (
-            <div key={d.name} className="bg-[#e7e8d1] h-[350px] text-black rounded-xl">
-              <div className='h-200 bg-[#f7f8f3] flex justify-center items-center rounded-t-xl'>
+            <div key={d.name} className="bg-[#EDEDE9] h-[350px] text-black rounded-xl">
+              <div className='h-200 bg-[#EDEDE9] flex justify-center items-center rounded-t-xl'>
                 <img src={d.image} alt="" className="h-46 w-46 rounded-full" />
               </div>
               <div className="flex flex-col items-center justify-center gap-4 p-4">
