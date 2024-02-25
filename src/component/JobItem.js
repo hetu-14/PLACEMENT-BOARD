@@ -229,7 +229,7 @@ const JobItem = (props) => {
                   <input
                     type="button"
                     value="Search"
-                    class="bg-[#A7BEAE] p-2 rounded-tr-lg rounded-br-lg text-black font-semibold"
+                    class="bg-[#598392] p-2 rounded-tr-lg rounded-br-lg text-white font-semibold"
                     onClick={handleSearch}
                   />
                 </div>
@@ -239,7 +239,7 @@ const JobItem = (props) => {
         </div>
       </div>
 
-      {loading && <Spinner className="flex items-center space-x-2" />}
+      {/* {loading && <Spinner className="flex items-center space-x-2" />} */}
       <InfiniteScroll dataLength={jobs.length}>
         <div>
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-items-center justify-center  mt-10 mb-5 duration-500 hover:shadow-xl shadow-lg">

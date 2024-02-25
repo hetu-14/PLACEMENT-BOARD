@@ -104,9 +104,9 @@ const Stats = () => {
     <div>
       <br></br>
       <div className='my-10'>
-        <h1 className='text-4xl italic font-medium  text-black-600'>Past Year Placement Insights:</h1><h2 className='text-4xl italic font-normal text-black-600'> A Visual Overview of Our Alumni's Career Achievements
-        </h2></div>
-      <Card className="w-4/5 text-center mx-auto mt-10">
+      <h1 className='text-5xl italic font-medium  text-black-600'>Past Year Placement Insights:</h1><h2 className='text-5xl italic font-normal text-black-600'> A Visual Overview of Our Alumni's Career Achievements
+</h2></div>
+      <Card className="w-4/5 text-center mx-auto mt-10 duration-700 hover:scale-110 hover:shadow-xl shadow-lg">
         <CardHeader
           floated={false}
           shadow={false}
