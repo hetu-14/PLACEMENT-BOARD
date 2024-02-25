@@ -1,0 +1,10 @@
+/* styles.css */
+.transition-fade {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+  
+  .transition-fade.show {
+    opacity: 1;
+  }
+  

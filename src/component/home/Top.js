@@ -19,21 +19,21 @@ const Top = () => {
     };
 
     return (
-        <div className="bg-[#330066]">
-            <h1 className='text-5xl italic font-medium  text-black-600'>A Legacy Of Excellence In Providing The Best Companies</h1>
+        <div className="bg-[#edede9]">  
+            <h1 className='text-4xl italic font-medium my-10 text-black-600'>A Legacy Of Excellence In Providing The Best Companies</h1>
             <hr className='bg-black'></hr>
             <div sx={{ minWidth: 150 }} className="grid grid-cols-5 gap-4"  >
-                <div className="bg-[#832B00] border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
                     <CardContent >
-                        <Typography sx={{ fontSize: 40 }} gutterBottom>
+                        <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             30 Lacs
                         </Typography>
-                        <Typography variant="h5" color="text.secondary" component="div">
+                        <Typography variant="h5" color="whitesmoke" component="div">
                             Highest Package
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-blue-400 border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                         <Typography sx={{ fontSize: 40 }} gutterBottom>
                             4 lacs
@@ -43,17 +43,17 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-yellow-400 border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
-                        <Typography sx={{ fontSize: 40 }} gutterBottom>
+                    <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             20,000+
                         </Typography>
-                        <Typography variant="h5" component="div" color="text.secondary">
+                        <Typography variant="h5" color="whitesmoke" component="div">
                             Students Placed
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-green-400 border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                         <Typography sx={{ fontSize: 40 }} gutterBottom>
                             2,500+
@@ -63,12 +63,12 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-orange-400 border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
-                        <Typography sx={{ fontSize: 40 }} gutterBottom>
+                    <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             2,000+
                         </Typography>
-                        <Typography variant="h5" component="div" color="text.secondary">
+                        <Typography variant="h5" color="whitesmoke" component="div">
                             Recruiting
                         </Typography>
                     </CardContent>

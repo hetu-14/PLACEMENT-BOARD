@@ -1,23 +1,21 @@
-import { footerLinks, socialMedia } from "../constants/index"
+import { footerLinks } from "../constants/index"
 
 const Footer = () => {
     return (
         <footer className=" bg-black">
             <div className=" flex justify-between items-center gap-20 flex-wrap max-lg:flex-col mx-7 my-10" >
                 <div className="flex flex-col items-start my-10">
-                    <a href="/">
-                    </a>
+                    {/* <a href="/">
+                    </a> */}
                     <p className=" text-base leading-7 font-montserrattext-white sm:max-w-sm text-white ">
-                        Get Shoes ready for the new term at your nearest Nike store.Find your perfect size In store.Get Rewards
+                        Join with ldrp-itr to achiev success.
                     </p>
-                    <div className="flex items-center gap-5">
+                    {/* <div className="flex items-center gap-5">
                         {socialMedia.map((icon) => (
                             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-
-
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap my-28">
                     {footerLinks.map((section) => (

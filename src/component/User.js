@@ -10,30 +10,19 @@ function User({ setLoginUser, user }) {
                 <link rel="stylesheet" href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css" />
             </head>
             <body >
-            <div class="flex flex-col justify-center items-center h-[130vh] pt-96">
+                <div class="flex flex-col justify-center items-center h-[130vh] pt-96">
                     <div class="relative flex flex-col items-center rounded-[10px] border-[1px] border-gray-200 w-[576px] mx-auto p-4 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
                         <div class="flex items-center justify-between rounded-t-3xl p-3 w-full">
-                        
+
 
                             <div class="text-lg font-bold text-navy-700 dark:text-white">
                                 Profile
                             </div>
-                            
-<div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-</div>
 
-
-
-
-                            {/* <button class="linear rounded-[20px] bg-lightPrimary px-4 py-2 text-base font-medium text-brand-500 transition duration-200 hover:bg-gray-100 active:bg-gray-200 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 dark:active:bg-white/20">
-                        See all
-                    </button> */}
+                            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                            </div>
                         </div>
-
-
-
-                        
                         <div class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
                             <div class="flex items-center gap-3">
                                 <div class="flex h-16 w-16 items-center justify-center">
@@ -354,11 +343,6 @@ function User({ setLoginUser, user }) {
                         <div class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
                             <div class="flex items-center gap-3">
                                 <div class="flex h-16 w-16 items-center justify-center">
-                                    {/* <img
-                            class="h-full w-full rounded-xl"
-                            src="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/media/Nft5.62dbaf7dd91b4180035c.png"
-                            alt=""
-                        /> */}
                                     <svg class="h-10 w-10 text-gray-900" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <line x1="3" y1="21" x2="21" y2="21" />  <path d="M5 21v-14l8 -4v18" />  <path d="M19 21v-10l-6 -4" />  <line x1="9" y1="9" x2="9" y2="9.01" />  <line x1="9" y1="12" x2="9" y2="12.01" />  <line x1="9" y1="15" x2="9" y2="15.01" />  <line x1="9" y1="18" x2="9" y2="18.01" /></svg>
                                 </div>
                                 <div class="flex flex-col">
@@ -370,18 +354,12 @@ function User({ setLoginUser, user }) {
                                 </div>
                             </div>
                             <div class="mt-1 flex items-center justify-center text-navy-700 dark:text-white">
-                                {/* <div>
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
-                        </div> */}
+                             
                                 <div class="ml-1 flex items-center text-sm font-bold text-navy-700 dark:text-white">
-                                    {/* <p>   </p>
-                        0.4<p class="ml-1">ETH</p> */}
+                                 
                                 </div>
                                 <div class="ml-2 flex items-center text-sm font-normal text-gray-600 dark:text-white">
-                                    {/* <p>30s</p>
-                        <p class="ml-1">ago</p> */}
-
-
+                            
                                     <div class="mt-14 flex justify-center w-full">
                                         <button class="bg-blue-700 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded" onClick={() => {
                                             navigate("/")
