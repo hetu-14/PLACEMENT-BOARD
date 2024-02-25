@@ -35,12 +35,12 @@ export default function Company() {
     <div className='w-4/5 m-auto  '>
     
       <div className="mt-20">
-      <h1 className='text-5xl italic font-medium my-10 text-black-600'>Premier Employers on Campus <br></br>Where Top Talent Meets Leading Companies</h1>
+      <h1 className='text-5xl italic font-medium mt-10 mb-20 text-black-600'>Premier Employers on Campus <br></br>Where Top Talent Meets Leading Companies</h1>
         <Slider {...settings}>
           {data.map((d) => (
-            <div key={d.name} className="bg-[#EDEDE9] h-[350px] text-black rounded-xl">
-              <div className='h-200 bg-[#EDEDE9] flex justify-center items-center rounded-t-xl'>
-                <img src={d.image} alt="" className="h-46 w-46 rounded-full" />
+            <div key={d.name} className="bg-[#eae0d5] h-[350px] text-black rounded-xl">
+              <div className='h-200 bg-[#eae0d5] flex justify-center items-center  rounded-t-xl'>
+                <img src={d.image }  alt="" className="h-46 w-46 rounded-full" />
               </div>
               <div className="flex flex-col items-center justify-center gap-4 p-4">
                 <p className="text-x font-semibold">{d.title}</p>

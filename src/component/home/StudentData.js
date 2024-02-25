@@ -49,13 +49,13 @@ function StudentData() {
             <h1 className='text-5xl italic my-20 text-black-600'>
                 <b>Our Alumni </b>
                 <br />
-                Working With the World’s Top Companies
+                Working With the Gujarat’s Top Companies
             </h1>
             <div className="mt-20">
                 <Slider {...settings}>
                     {data.map((d, index) => (
-                        <div key={d.name} className="bg-[#D6CCC2] w-72 h-full text-black rounded-xl">
-                            <div className='bg-gradient-to-b from-[#EDEDE9] to-[#D6CCC2] flex justify-center items-center '>
+                        <div key={d.name} className="bg-[#E1BD92] w-72 h-full text-black duration-700 hover:scale-105 hover:shadow-xl shadow-lg rounded-xl">
+                            <div className='bg-gradient-to-b from-[#eae0d5] to-[#E1BD92] flex  justify-center items-center '>
                                 <img src={loadImage(index)} alt="" className="h-56 w-56" />
                             </div>
                             <div className="flex flex-col items-center justify-center">
@@ -63,8 +63,8 @@ function StudentData() {
                                 <p className="text-center">Company: {d.company}</p>
                                 <p className="text-center">Package: {d.packageLPA} LPA</p>
                                 <p className="text-center">Department: {d.department}</p>
-                                <p className="text-center">Role: {d.role}</p>
-                                <button className='bg-[#B85042] text-white my-5 text-lg px-6 py-1 rounded-xl'>Read More</button>
+                                <p className="text-center mb-5">Role: {d.role}</p>
+                                {/* <button className='bg-[#B85042] text-white my-5 text-lg px-6 py-1 rounded-xl'>Read More</button> */}
                             </div>
                         </div>
                     ))}

@@ -229,7 +229,7 @@ const JobItem = (props) => {
                   <input
                     type="button"
                     value="Search"
-                    class="bg-[#A7BEAE] p-2 rounded-tr-lg rounded-br-lg text-black font-semibold"
+                    class="bg-[#598392] p-2 rounded-tr-lg rounded-br-lg text-white font-semibold"
                     onClick={handleSearch}
                   />
                 </div>

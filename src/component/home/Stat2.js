@@ -102,7 +102,7 @@ import {
    
   export default function Example() {
     return (
-      <Card  className="w-4/5 mx-auto my-10">
+      <Card  className="w-4/5 mx-auto my-10 duration-700 hover:scale-110 hover:shadow-xl shadow-lg">
         <CardHeader
           floated={false}
           shadow={false}

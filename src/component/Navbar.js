@@ -7,7 +7,7 @@ const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Placement", to: "/placement", current: true },
   { name: "Training", to: "/training", current: true },
-  { name: "History", to: "/history", current: true },
+  // { name: "History", to: "/history", current: true },
 ];
 
 function classNames(...classes) {
@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Navbar({ user, setLoginUser }) {
   const navigate = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-[#d6ccc2]">
+    <Disclosure as="nav" className="bg-[#598392]">
       {({ open }) => (
         <>
           <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export default function Navbar({ user, setLoginUser }) {
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 mt-7 text-sm font-medium "
+                          "rounded-md px-7 py-2 mt-7 text-sm font-medium "
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

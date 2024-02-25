@@ -19,11 +19,11 @@ const Top = () => {
     };
 
     return (
-        <div className="bg-[#edede9]">  
+        <div className="bg-[#Eae0d5]">  
             <h1 className='text-5xl italic font-medium my-10 text-black-600'>A Legacy Of Excellence In Providing The Best Companies</h1>
-            <hr className='bg-black'></hr>
-            <div sx={{ minWidth: 150 }} className="grid grid-cols-5 gap-4"  >
-                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
+       
+            <div sx={{ minWidth: 150 }} className="grid grid-cols-5 mx-5 gap-4 "  >
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] duration-700 hover:scale-110 hover:shadow-xl shadow-lg border-2 h-36 my-4 border-black rounded-md">
                     <CardContent >
                         <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             30 Lacs
@@ -33,7 +33,7 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] duration-700 hover:scale-110 hover:shadow-xl shadow-lg border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                         <Typography sx={{ fontSize: 40 }} gutterBottom>
                             4 lacs
@@ -43,7 +43,7 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] duration-700 hover:scale-110 hover:shadow-xl shadow-lg border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                     <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             20,000+
@@ -53,7 +53,7 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#faedcd] to-[#d4a373] duration-700 hover:scale-110 hover:shadow-xl shadow-lg border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                         <Typography sx={{ fontSize: 40 }} gutterBottom>
                             2,500+
@@ -63,7 +63,7 @@ const Top = () => {
                         </Typography>
                     </CardContent>
                 </div>
-                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] border-2 h-36 my-4 border-black rounded-md">
+                <div className="bg-gradient-to-b from-[#2b2d42] to-[#8d99ae] duration-700 hover:scale-110 hover:shadow-xl shadow-lg border-2 h-36 my-4 border-black rounded-md">
                     <CardContent>
                     <Typography sx={{ fontSize: 40 }} color="whitesmoke" gutterBottom>
                             2,000+
