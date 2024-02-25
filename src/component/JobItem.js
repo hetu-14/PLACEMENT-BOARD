@@ -49,7 +49,7 @@ const JobItem = (props) => {
       const options = {
         method: "GET",
         headers: {
-          "X-RapidAPI-Key": "7b1089f9e9msh0c84e4c9c9b774ap15c242jsnfb59b26f2efd",
+          "X-RapidAPI-Key": "ff208bbf45mshaa6b8e57de208f3p1a6c19jsnc4be9a21ae81",
           "X-RapidAPI-Host": "jobs-api14.p.rapidapi.com",
         },
       };
@@ -239,7 +239,7 @@ const JobItem = (props) => {
         </div>
       </div>
 
-      {loading && <Spinner className="justify-center" />}
+      {loading && <Spinner className="flex items-center space-x-2" />}
       <InfiniteScroll dataLength={jobs.length}>
         <div>
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-items-center justify-center  mt-10 mb-5 duration-500 hover:shadow-xl shadow-lg">

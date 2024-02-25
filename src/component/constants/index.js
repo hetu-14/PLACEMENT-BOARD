@@ -90,10 +90,10 @@ export const footerLinks = [
     {
         title: "Address",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
+            { name: "LDRP Institute of Technology & Research,", link: "/" },
+            { name: "Near KH-5,", link: "/" },
+            { name: "Sector-15,", link: "/" },
+            { name: "Gandhinagar - 382015.", link: "/" },
             { name: "Nike Waffle Racer", link: "/" },
             { name: "Nike Cortez", link: "/" },
         ],
@@ -111,7 +111,7 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+            { name: "info@ldrp.ac.in", link: "/" },
             { name: "+92554862354", link: "tel:+92554862354" },
         ],
     },

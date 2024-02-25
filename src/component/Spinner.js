@@ -2,7 +2,7 @@
 import React from "react";
 const Spinner = (props) => {
   return (
-    <div className="justify-center">
+    <div className="flex items-center space-x-2">
       <img className="snap-center h-8 place-content-evenly" src="images/loading.gif" alt="loading" />
     </div>
   );

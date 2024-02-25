@@ -1,4 +1,3 @@
-import { Divider, List, ListItem, ListItemText } from '@mui/material';
 import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,7 +31,7 @@ export default function Company() {
 
   return (
     <div className='w-2/4 m-auto'>
-      <div>
+      {/* <div>
         <List sx={style} aria-label="mailbox folders">
           <ListItem>
             <ListItemText primary="Carreer Development And Training" />
@@ -46,22 +45,20 @@ export default function Company() {
             <ListItemText primary="Campus Drive And Interview Training" />
           </ListItem>
         </List>
-      </div>
+      </div> */}
       <div className="mt-20">
         <Slider {...settings}>
           {data.map((d) => (
             <div key={d.name} className="bg-[#e7e8d1] h-[350px] text-black rounded-xl">
-              <div className='h-200 bg-[#f7f8f3] flex justify-center items-center rounded-t-xl'>
+              <div className='h-full bg-[#f7f8f3] bg-transparent flex justify-center items-center rounded-t-xl'>
                 <img src={d.image} alt="" className="h-46 w-46 rounded-full" />
               </div>
               <div className="flex flex-col items-center justify-center gap-4 p-4">
-                <p className="text-x font-semibold">{d.title}</p>
               </div>
             </div>
           ))}
         </Slider>
       </div>
-
     </div>
 
   );
