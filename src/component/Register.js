@@ -81,8 +81,18 @@ const navigate = useNavigate();
   };
 
   return (
-    <section className="bg-gray-50 dark:bg-pink-500">
-      <div className="flex flex-col items-center justify-center  md:h-screen lg:py-0">
+    <section style={{ 
+      backgroundImage: 'url("https://t4.ftcdn.net/jpg/02/55/77/03/360_F_255770374_rbmJO9gkkIhMBcyVPc3iW016BCLDvcWc.jpg")',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      width: '100vw', // 100% of viewport width
+      height: '100vh', // 100% of viewport height
+    }}>
+    <div className="w-56 h-auto  mx-auto ">
+      <img src="https://i.ibb.co/wJ9kwFZ/logo-removebg-preview.png"></img>
+      </div>
+      <div className="flex flex-col items-center justify-center  ">
         
         <div className="bg-white mx-96 rounded-lg shadow dark:border  dark:border-gray-700  backdrop-filter backdrop-blur-2 bg-opacity-25">
           <div className="p-6 space-y-4 ">
@@ -162,7 +172,7 @@ const navigate = useNavigate();
             </form>
           </div>
           <button type="submit" className="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign Up</button>
-              <p className="text-sm font-light text-gray-500 dark:text-gray-400 mb-10">
+              <p className="text-sm font-light  dark:text-white mb-10">
                 Already have an account? <a href="" onClick={() => {
                   navigate("/login");
                 }}
