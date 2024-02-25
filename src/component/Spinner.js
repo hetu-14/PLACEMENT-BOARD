@@ -2,8 +2,8 @@
 import React from "react";
 const Spinner = (props) => {
   return (
-    <div className="text-center">
-      <img className="my-3" src="images/loading.gif" alt="loading" height="30px" />
+    <div className="justify-center">
+      <img className="snap-center h-8 place-content-evenly" src="images/loading.gif" alt="loading" />
     </div>
   );
 };

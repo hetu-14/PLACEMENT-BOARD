@@ -1,12 +1,11 @@
-import { Fragment } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Fragment } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Placement", to: "/placement", current: true },
-  { name: "Internship", to: "/internship", current: true },
   { name: "Training", to: "/training", current: true },
   { name: "History", to: "/history", current: true },
 ];
@@ -165,5 +164,5 @@ export default function Navbar({ user, setLoginUser }) {
         </>
       )}
     </Disclosure>
-  );
+  );
 }

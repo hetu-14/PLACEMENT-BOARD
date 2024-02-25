@@ -8,7 +8,6 @@ import LoadingBar from "react-top-loading-bar";
 import './App.css';
 import History from "./component/History";
 import Home from "./component/Home";
-import Internship from "./component/Internship";
 import Job from "./component/Job";
 import JobItem from "./component/JobItem";
 import Login from "./component/Login";
@@ -64,15 +63,6 @@ function App() {
             element={
               <Placement
                 setLoginUser={setLoginUser} user={user}
-                setProgress={setProgress}
-              />
-            }
-          ></Route>
-          <Route
-            exact
-            path="/internship"
-            element={
-              <Internship
                 setProgress={setProgress}
               />
             }

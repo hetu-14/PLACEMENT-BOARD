@@ -8,20 +8,32 @@ function User({ setLoginUser, user }) {
         <html>
             <head>
                 <link rel="stylesheet" href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css" />
-
             </head>
             <body >
-                <div class="flex flex-col justify-center items-center h-[130vh] pt-96">
+            <div class="flex flex-col justify-center items-center h-[130vh] pt-96">
                     <div class="relative flex flex-col items-center rounded-[10px] border-[1px] border-gray-200 w-[576px] mx-auto p-4 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
                         <div class="flex items-center justify-between rounded-t-3xl p-3 w-full">
+                        
+
                             <div class="text-lg font-bold text-navy-700 dark:text-white">
                                 Profile
                             </div>
+                            
+<div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+    <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+</div>
+
+
+
 
                             {/* <button class="linear rounded-[20px] bg-lightPrimary px-4 py-2 text-base font-medium text-brand-500 transition duration-200 hover:bg-gray-100 active:bg-gray-200 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 dark:active:bg-white/20">
                         See all
                     </button> */}
                         </div>
+
+
+
+                        
                         <div class="flex h-full w-full items-start justify-between rounded-md border-[1px] border-[transparent] dark:hover:border-white/20 bg-white px-3 py-[20px] transition-all duration-150 hover:border-gray-200 dark:!bg-navy-800 dark:hover:!bg-navy-700">
                             <div class="flex items-center gap-3">
                                 <div class="flex h-16 w-16 items-center justify-center">
@@ -282,7 +294,7 @@ function User({ setLoginUser, user }) {
                                     <svg class="h-10 w-10 text-gray-900" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />  <line x1="8" y1="8" x2="12" y2="8" />  <line x1="8" y1="12" x2="12" y2="12" />  <line x1="8" y1="16" x2="12" y2="16" /></svg>
                                 </div>
                                 <div class="flex flex-col">
-                                    <h5 class="text-base font-bold text-navy-700 dark:text-white">
+                                    <h5 class="text-base font-bold text-navy-700 dark:text-white ">
                                         Department:
                                     </h5>
                                     <p class="mt-1 text-sm font-normal text-gray-600">
