@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const bcrypt = require("bcrypt");
+// const bcrypt = require("bcrypt");
 const userRouter = require("./routes/user")
 const studentRouter = require("./routes/student")
 const mongoDB = require("./db")

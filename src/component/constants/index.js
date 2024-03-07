@@ -94,8 +94,6 @@ export const footerLinks = [
             { name: "Near KH-5,", link: "/" },
             { name: "Sector-15,", link: "/" },
             { name: "Gandhinagar - 382015.", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
         ],
     },
     {
