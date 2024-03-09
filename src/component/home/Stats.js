@@ -17,7 +17,7 @@ const chartConfig = {
   series: [
     {
       name: "highest packege",
-      data: [12, 10, 12, 14, 13.5],
+      data: [10, 12, 12, 14, 13.5],
     },
   ],
   options: {
@@ -54,6 +54,7 @@ const chartConfig = {
           fontWeight: 400,
         },
       },
+      //comment
       categories: [
         "2019",
         "2020",

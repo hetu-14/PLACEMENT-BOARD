@@ -16,7 +16,7 @@ const chartConfig = {
   series: [
     {
       name: "Students placed",
-      data: [112, 70, 155, 124, 180],
+      data: [130, 117, 155, 144, 172],
     },
   ],
   options: {
@@ -25,7 +25,32 @@ const chartConfig = {
         show: false,
       },
     },
+    xaxis: {
+      axisTicks: {
+        show: false,
+      },
+      axisBorder: {
+        show: false,
+      },
+      labels: {
+        style: {
+          colors: "#616161",
+          fontSize: "12px",
+          fontFamily: "inherit",
+          fontWeight: 400,
+        },
+      },
+      categories: [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+
+      ],
+    },
   }
+  
 };
 const Stat2 = () => {
   return (
@@ -52,3 +77,4 @@ const Stat2 = () => {
 }
 
 export default Stat2
+  
