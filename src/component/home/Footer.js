@@ -3,13 +3,11 @@ import { footerLinks } from "../constants/index"
 const Footer = () => {
     return (
         <footer className=" bg-black">
-            <div className=" flex justify-between items-center gap-20 flex-wrap max-lg:flex-col mx-7 my-10" >
+            <div className=" flex justify-between items-center gap-10 flex-wrap max-lg:flex-col mx-7 my-10" >
                 <div className="flex flex-col items-start my-10">
                     {/* <a href="/">
                     </a> */}
-                    <p className=" text-base leading-7 font-montserrattext-white sm:max-w-sm text-white ">
-                        Join with ldrp-itr to achiev success.
-                    </p>
+                   
                     {/* <div className="flex items-center gap-5">
                         {socialMedia.map((icon) => (
                             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
