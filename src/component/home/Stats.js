@@ -17,7 +17,7 @@ const chartConfig = {
   series: [
     {
       name: "highest packege",
-      data: [10, 12, 12, 14, 13.5],
+      data: [10, 12, 13, 14, 13.5],
     },
   ],
   options: {
