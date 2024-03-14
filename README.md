@@ -30,7 +30,7 @@ To get started with Placement Board, follow these steps:
 4. Access the web portal at `http://localhost:3000`
 
 ## Support and Feedback
-If you encounter any issues or have any feedback regarding Placement Board, please don't hesitate to reach out to us at [contact@example.com]. We value your input and are committed to continuously improving the platform to better serve the needs of students.
+If you encounter any issues or have any feedback regarding Placement Board, please don't hesitate to reach out to us at [hetrajsolanki148@gmail.com]. We value your input and are committed to continuously improving the platform to better serve the needs of students.
 
 Thank you for using Placement Board!
 
