@@ -16,6 +16,7 @@ import Admin from "./admin/Admin";
 
 function App() {
   const [user, setLoginUser] = useState("");
+  // const [admin, setAdmin] = useState("");
   const [progress, setProgress] = useState(0);
   const [profile, setProfile] = useState(true);
   return (

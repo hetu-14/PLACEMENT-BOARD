@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { toast } from 'react-toastify';
 import Job from "./Job";
 import Spinner from "./Spinner";
+import Post from '../admin/Post';
 
 const JobItem = (props) => {
   const location = useLocation();
@@ -270,6 +271,7 @@ const JobItem = (props) => {
           </div>
         </div>
       </InfiniteScroll>
+      <Post/>
     </>
   );
 };
