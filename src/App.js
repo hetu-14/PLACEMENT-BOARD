@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes
-} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
-import './App.css';
+import "./App.css";
 import History from "./component/History";
 import Home from "./component/Home";
 import Job from "./component/Job";
@@ -16,8 +12,7 @@ import Placement from "./component/Placement";
 import Register from "./component/Register";
 import User from "./component/User";
 import Training from "./component/training/Training";
-
-
+import Admin from "./admin/Admin";
 
 function App() {
   const [user, setLoginUser] = useState("");
@@ -25,7 +20,7 @@ function App() {
   const [profile, setProfile] = useState(true);
   return (
     // <UserContext.Provider>
-    <div className='App'>
+    <div className="App">
       <Router>
         {!user || !profile ? (
           ""
@@ -35,20 +30,14 @@ function App() {
         {!user ? (
           " "
         ) : (
-          <LoadingBar
-            color="#f11946"
-            progress={progress}
-            height={3}
-          />
+          <LoadingBar color="#f11946" progress={progress} height={3} />
         )}
         <Routes>
           {user ? (
             <Route
               exact
               path="/"
-              element={
-                <Home setLoginUser={setLoginUser} user={user} />
-              }
+              element={<Home setLoginUser={setLoginUser} user={user} />}
             ></Route>
           ) : (
             <Route
@@ -62,7 +51,8 @@ function App() {
             path="/placement"
             element={
               <Placement
-                setLoginUser={setLoginUser} user={user}
+                setLoginUser={setLoginUser}
+                user={user}
                 setProgress={setProgress}
               />
             }
@@ -70,28 +60,10 @@ function App() {
           <Route
             exact
             path="/jobitem"
-            element={
-              <JobItem
-                setProgress={setProgress}
-              />
-            }
+            element={<JobItem setProgress={setProgress} />}
           ></Route>
-          <Route
-            exact
-            path="/training"
-            element={
-              <Training
-              />
-            }
-          ></Route>
-          <Route
-            exact
-            path="/history"
-            element={
-              <History
-              />
-            }
-          ></Route>
+          <Route exact path="/training" element={<Training />}></Route>
+          <Route exact path="/history" element={<History />}></Route>
           <Route
             exact
             path="/user"
@@ -104,14 +76,7 @@ function App() {
               />
             }
           ></Route>
-          <Route
-            exact
-            path="/job"
-            element={
-              <Job
-              />
-            }
-          ></Route>
+          <Route exact path="/job" element={<Job />}></Route>
           <Route
             exact
             path="/login"
@@ -136,13 +101,12 @@ function App() {
               />
             }
           ></Route>
-
+          <Route exact path="/admin" element={<Admin />}></Route>
         </Routes>
       </Router>
     </div>
     // </UserContext.Provider>
-  )
+  );
 }
 
 export default App;
-

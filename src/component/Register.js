@@ -101,7 +101,7 @@ const navigate = useNavigate();
             </h1>
             
               {/* <div className="flex col-span-2"> */}
-            <form className="w-auto mx-1 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-5 gap-x-5 mt-10 mb-10 onSubmit={Register}">
+            <form className="w-auto mx-1 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-5 gap-x-5 mt-10 mb-10" onSubmit={Register}>
               <div>
                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name</label>
                 <input type="text" value={user.name} name="name" id="Name" onChange={handleChange}
@@ -171,7 +171,7 @@ const navigate = useNavigate();
              
             </form>
           </div>
-          <button type="submit" className="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign Up</button>
+          <button type="submit" onClick={Register} className="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign Up</button>
               <p className="text-sm font-light  dark:text-white mb-10">
                 Already have an account? <a href="" onClick={() => {
                   navigate("/login");

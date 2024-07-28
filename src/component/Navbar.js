@@ -2,12 +2,13 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Fragment } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Admin from "../admin/Admin";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Placement", to: "/placement", current: true },
   { name: "Training", to: "/training", current: true },
-  // { name: "History", to: "/history", current: true },
+  // { name: "Admin", to: "/admin", current: true },
 ];
 
 function classNames(...classes) {
@@ -16,6 +17,7 @@ function classNames(...classes) {
 
 export default function Navbar({ user, setLoginUser }) {
   const navigate = useNavigate();
+  const admin = "admin@gmail.com";
   return (
     <Disclosure as="nav" className="bg-[#598392]">
       {({ open }) => (
@@ -30,7 +32,7 @@ export default function Navbar({ user, setLoginUser }) {
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w -6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -59,7 +61,23 @@ export default function Navbar({ user, setLoginUser }) {
                         {item.name}
                       </Link>
                     ))}
+                    {user.email === admin && (
+                      <Link
+                        // key={item.name}
+                        to={"/admin"}
+                        className={classNames(
+                          true
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "rounded-md px-7 py-2 mt-7 text-sm font-medium "
+                        )}
+                        aria-current={true ? "page" : undefined}
+                      >
+                        {"Dashboard"}
+                      </Link>
+                    )}
                   </div>
+
                   {/* {user.name} */}
                 </div>
               </div>
