@@ -22,5 +22,5 @@ app.use("/", require("./routes/student").router);
 app.use("/", require("./routes/post").router);
 
 app.listen(5000, () => {
-  console.log("BE started at port 5000");
+  console.log("BE started at port 5000");
 });

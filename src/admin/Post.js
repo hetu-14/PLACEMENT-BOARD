@@ -2,26 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-// ... (your existing imports)
 
-function StudentData() {
+
+
+function Post() {
     const [data, setData] = useState([]);
 
-    const loadImage = (index) => {
-        // Replace the following URLs with your actual image URLs
-        const images = [
-            "/images/st1.png",
-            "/images/st2.png",
-            "/images/st3.png",
-            "/images/st4.png",
-            "/images/st5.png",
-            "/images/st6.png",
-        ];
-        return images[index % images.length];
-    };
+    
 
     const loadData = async () => {
-        let response = await fetch("http://localhost:5000/studentData", {
+        let response = await fetch("http://localhost:5000/showpost", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -46,24 +36,30 @@ function StudentData() {
     return (
         <div className='w-3/4 m-auto'>
             <h1 className='text-4xl italic my-20 text-black-600'>
-                <b>Our Alumni </b>
+                <b>Post</b>
                 <br />
-                Working With the Gujarat’s Top Companies
+               
             </h1>
             <div className="mt-20">
                 <Slider {...settings}>
                     {data.map((d, index) => (
                         <div key={d.name} className="bg-[#E1BD92] w-72 h-full text-black duration-700 hover:scale-105 hover:shadow-xl shadow-lg rounded-xl">
                             <div className='bg-gradient-to-b from-[#eae0d5] to-[#E1BD92] flex  justify-center items-center '>
-                                <img src={loadImage(index)} alt="" className="h-56 w-56" />
+                               
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <p className="text-x font-semibold">Name: {d.name}</p>
-                                <p className="text-center">Company: {d.company}</p>
-                                <p className="text-center">Package: {d.packageLPA} LPA</p>
+                                <p className="text-x font-semibold"> Company Name: {d.company_name}</p>
+                                <p className="text-x font-semibold">Description: {d.description}</p>
                                 <p className="text-center">Department: {d.department}</p>
-                                <p className="text-center mb-5">Role: {d.role}</p>
-                                {/* <button className='bg-[#B85042] text-white my-5 text-lg px-6 py-1 rounded-xl'>Read More</button> */}
+                                <p className="text-center">Location: {d.location} LPA</p>
+                                <p className="text-center">CTC: {d.CTC}</p>
+                                <p className="text-center">Role: {d.role}</p>
+                                <p className="text-center mb-5">Link: {d.link}</p>
+                                <p className="text-center mb-5">Vacancy: {d.vacancy}</p>
+                                <p className="text-center mb-5">Stipend: {d.stipend}</p>
+                                <p className="text-center mb-5">Eligibility: {d.eligibility}</p>
+                                <p className="text-center mb-5">Last Date To Apply: {d.last_date}</p>
+                                <button className="text-center mb-5">Apply</button>
                             </div>
                         </div>
                     ))}
@@ -73,5 +69,5 @@ function StudentData() {
     );
 }
 
-export default StudentData;
+export default Post;
 
