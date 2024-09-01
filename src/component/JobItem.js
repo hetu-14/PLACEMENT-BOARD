@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useLocation } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import Job from "./Job";
 import Spinner from "./Spinner";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const JobItem = (props) => {
   const location = useLocation();
@@ -41,7 +44,13 @@ const JobItem = (props) => {
   };
 
   const handleSearch = async () => {
-    if (searchQuery !== "1" && selectedLocation !== "1" && selectedEmployetype !== "1" && selectedRemote !== "1" && selectedDatePosted !== "1") {
+    if (
+      searchQuery !== "1" &&
+      selectedLocation !== "1" &&
+      selectedEmployetype !== "1" &&
+      selectedRemote !== "1" &&
+      selectedDatePosted !== "1"
+    ) {
       props.setProgress(30);
       setLoading(true);
       const url = `https://jobs-api14.p.rapidapi.com/list?query=${searchQuery}&location=${selectedLocation}&distance=1.0&language=en_GB&remoteOnly=${selectedRemote}&datePosted=${selectedDatePosted}&employmentTypes=${selectedEmployetype}&index=0`;
@@ -49,7 +58,8 @@ const JobItem = (props) => {
       const options = {
         method: "GET",
         headers: {
-          "X-RapidAPI-Key": "ff208bbf45mshaa6b8e57de208f3p1a6c19jsnc4be9a21ae81",
+          "X-RapidAPI-Key":
+            "ff208bbf45mshaa6b8e57de208f3p1a6c19jsnc4be9a21ae81",
           "X-RapidAPI-Host": "jobs-api14.p.rapidapi.com",
         },
       };
@@ -65,9 +75,7 @@ const JobItem = (props) => {
       }
       setLoading(false);
       props.setProgress(100);
-
-    }
-    else {
+    } else {
       toast.error("Please select fields...", {
         position: "top-right",
         autoClose: 3000,
@@ -82,11 +90,31 @@ const JobItem = (props) => {
 
     // console.log(jobs);
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
-
+  const [data, setData] = useState([]);
+  const fetchDataAndSetState = async () => {
+    let response = await fetch("http://localhost:5000/showpost", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data2 = await response.json();
+    setData(data2);
+  };
+  useEffect(() => {
+    fetchDataAndSetState();
+  }, []);
   return (
     <>
       <div className="align-middle">
@@ -224,7 +252,6 @@ const JobItem = (props) => {
                     placeholder="Search for Online Jobs here"
                     id="searchbar"
                     onChange={handleSearchChange}
-
                   />
                   <input
                     type="button"
@@ -238,7 +265,36 @@ const JobItem = (props) => {
           </div>
         </div>
       </div>
+      <div className="mt-20">
+        <Slider {...settings}>
+          {data.map((d, index) => (
+            <div
+              key={d.name}
+              className="bg-[#E1BD92] w-72 h-full text-black duration-700 hover:scale-105 hover:shadow-xl shadow-lg rounded-xl"
+            >
+              <div className="bg-gradient-to-b from-[#eae0d5] to-[#E1BD92] flex  justify-center items-center ">
+                {/* <img src={loadImage(index)} alt="" className="h-56 w-56" /> */}
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <p className="text-x font-semibold">
+                  company_name: {d.company_name}
+                </p>
+                <p className="text-center">description: {d.description}</p>
+                <p className="text-center">department: {d.department} LPA</p>
+                <p className="text-center">location: {d.location}</p>
+                <p className="text-center mb-5">CTC: {d.CTC}</p>
+                <p className="text-center">role: {d.role}</p>
+                <p className="text-center">link: {d.link}</p>
+                <p className="text-center">vacancy: {d.vacancy}</p>
+                <p className="text-center mb-5">stipend: {d.stipend}</p>
+                <p className="text-center mb-5">eligibility: {d.eligibility}</p>
 
+                {/* <button className='bg-[#B85042] text-white my-5 text-lg px-6 py-1 rounded-xl'>Read More</button> */}
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
       {/* {loading && <Spinner className="flex items-center space-x-2" />} */}
       <InfiniteScroll dataLength={jobs.length}>
         <div>

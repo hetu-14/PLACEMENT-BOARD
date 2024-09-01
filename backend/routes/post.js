@@ -7,8 +7,8 @@ const router = express.Router();
 router.post("/showpost", async (req, res) => {
   try {
     const fetched_data = await post.find();
-    console.log("om");
-    console.log(fetched_data);
+    // console.log("om");
+    // console.log(fetched_data);
     res.send(fetched_data);
   } catch (error) {
     console.log(error.message);
@@ -19,23 +19,44 @@ router.post("/showpost", async (req, res) => {
 router.post("/addpost", async (req, res) => {
   //   const {} = req.body;
   let success = false;
+  const {
+    company_name,
+    description,
+    location,
+    department,
+    CTC,
+    role,
+    link,
+    vacancy,
+    stipend,
+    eligibility,
+  } = req.body;
+
+  console.log(company_name);
+  console.log(description);
+
+  console.log(location);
+
+  console.log(CTC);
+
   try {
-    // let user = await User.findOne({ email: email });
+    // let user = await post.findOne({ email: email });
     const user = new post({
       company_name,
       description,
       location,
       department,
       CTC,
-      department,
       role,
       link,
       vacancy,
       stipend,
       eligibility,
     });
+    console.log("om post created");
+    // console.log(company_name);
 
-    const doc = await post.save();
+    const doc = await user.save();
     console.log(doc);
     success = true;
     res.json({
@@ -43,8 +64,10 @@ router.post("/addpost", async (req, res) => {
       success: success,
     });
   } catch (err) {
+    console.log("om post not created");
+    // console.log(user);
     success = false;
-    res.send(err);
+    res.send({ err, success: false });
   }
 });
 
