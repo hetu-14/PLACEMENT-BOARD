@@ -32,25 +32,13 @@ router.post("/addpost", async (req, res) => {
     last_date,
   } = req.body;
   let success = false;
-  const {
-    company_name,
-    description,
-    location,
-    department,
-    CTC,
-    role,
-    link,
-    vacancy,
-    stipend,
-    eligibility,
-  } = req.body;
 
-  console.log(company_name);
-  console.log(description);
+  // console.log(company_name);
+  // console.log(description);
 
-  console.log(location);
+  // console.log(location);
 
-  console.log(CTC);
+  // console.log(CTC);
 
   try {
     // let user = await User.findOne({ email: email });
@@ -70,7 +58,7 @@ router.post("/addpost", async (req, res) => {
     console.log("om post created");
     // console.log(company_name);
 
-    const doc = await post.save();
+    const doc = await user.save();
     console.log(doc);
     success = true;
     res.json({
@@ -78,7 +66,7 @@ router.post("/addpost", async (req, res) => {
       success: success,
     });
   } catch (err) {
-    console.log("om post not created");
+    // console.log("om post not created");
     // console.log(user);
     success = false;
     res.send({ err, success: false });

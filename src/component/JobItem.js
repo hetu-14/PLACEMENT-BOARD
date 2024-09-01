@@ -326,7 +326,7 @@ const JobItem = (props) => {
           </div>
         </div>
       </InfiniteScroll>
-      <Post />
+      {/* <Post /> */}
     </>
   );
 };
